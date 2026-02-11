@@ -1,0 +1,4 @@
+defaultProject: oxya-eu-automation-38cea570
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.37
