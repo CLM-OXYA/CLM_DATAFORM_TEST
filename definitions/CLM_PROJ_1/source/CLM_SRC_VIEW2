@@ -1,0 +1,15 @@
+config {
+    type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
+    columns: {
+        name: "a test name", // Column descriptions are pushed to BigQuery.
+        type: "a test type",
+        value: "a test value"
+    }
+}
+
+  -- Source view
+  -- The rest of a SQLX file contains your SELECT statement used to create the table.
+SELECT
+  *
+FROM
+  `oxya-eu-automation-38cea570.dataform.CLM_DF_TAB1`
