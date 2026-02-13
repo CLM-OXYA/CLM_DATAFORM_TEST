@@ -8,7 +8,7 @@ js {
 }
 
 SELECT
-  *
+  *, ${funcs.CLMTT("Value")} as FOISDEUX
 FROM
   ${ref("CLM_SRC_VIEW")}
   where Value < ${CLMVAR} and
