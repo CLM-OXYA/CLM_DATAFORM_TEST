@@ -2,7 +2,13 @@ config {
     type: "view"
 }
 
+js { 
+  const CLMVAR = 20;
+  module.exports = { CLMVAR };
+}
+
 SELECT
   *
 FROM
   ${ref("CLM_SRC_VIEW")}
+  where Value > ${CLMVAR}
