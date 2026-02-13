@@ -3,7 +3,7 @@ config {
 }
 
 js { 
-  const CLMVAR = 20;
+  const CLMVAR = 30;
   module.exports = { CLMVAR };
 }
 
@@ -11,4 +11,6 @@ SELECT
   *
 FROM
   ${ref("CLM_SRC_VIEW")}
-  where Value > ${CLMVAR}
+  where Value < ${CLMVAR} and
+  Value > ${constants.multv}
+
