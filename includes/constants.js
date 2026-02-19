@@ -1,3 +1,3 @@
- const multv = 10; 
+ const multv = 100; 
  module.exports = { multv };
  
